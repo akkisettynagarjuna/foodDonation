@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" type="image/jpg" href="https://www.ariseafrica.org/wp-content/uploads/2020/04/food-white-on-orange-brush.png" sizes="20*20">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"rel="stylesheet"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+        <title>
+            Food Donation || Website
+        </title>
+        <style>
+            html {
+              scroll-behavior: smooth;
+            }
+            body{
+              background-color: white;
+            }
+            .a{
+               
+                background-color: white;
+                opacity: 0;
+	              animation: fadeIn 1s ease-in both;
+                box-shadow: 10px 10px 5px rgb(221, 218, 218);
+                
+            }
+            @keyframes fadeIn {
+	            from {
+		                opacity: 0;
+		                transform: translate3d(0, -20%, 0);
+	            }
+	            to {
+		                opacity: 1;
+		                transform: translate3d(0, 0, 0);
+	            }
+            }
+            #a1{
+                 height: 60px;
+                 width: 70px;
+                 padding-left: 10px;
+            }
+            #a2{
+                padding-left: 8px;
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .aa{
+                padding: 15px;
+                float: right;
+                
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #aa1{
+                font-size: 19px;
+                margin: 20px;
+                text-decoration: none;
+                color: black;
+                  
+            }
+            #aa1:hover,#aa2:hover,#aa3:hover,#aa4:hover{
+              color: coral;
+            }
+            #aa2{
+                font-size: 19px;
+                margin: 20px;
+                text-decoration: none;
+                color: black;
+                
+            }
+            #aa4{
+                margin: 20px;
+                font-size: 19px;
+                text-decoration: none;
+                color: black;
+               
+            }
+            #aa3{
+                margin: 20px;
+                font-size: 19px;
+                text-decoration: none;
+                color: black;
+                
+            }
+            #b{
+                margin: 50px;
+                
+            }
+            #b1{
+                color: black;
+                font-family: monospace;
+
+            }
+            #c{
+                position: absolute;
+                margin: 50px;
+            }
+            @keyframes fadeInUp {
+                from {
+                    transform: translate3d(0,40px,0)
+                 }
+                to {
+                    transform: translate3d(0,0,0);
+                    opacity: 1
+                }
+            }
+            @-webkit-keyframes fadeInUp {
+                from {
+                    transform: translate3d(0,40px,0)
+                }
+                to {
+                    transform: translate3d(0,0,0);
+                    opacity: 1
+                }
+            }
+            .animated {
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-fill-mode: both
+            }
+
+            .animatedFadeInUp {
+                opacity: 0
+            }
+
+            .fadeInUp {
+                 opacity: 0;
+                 animation-name: fadeInUp;
+                -webkit-animation-name: fadeInUp;
+            }
+            .col-sm{
+                 margin-bottom: 1em;
+            }
+            .card-title{
+                color: black;
+            }
+            #ss{
+                text-decoration: none;
+                color: skyblue;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+            .card:hover{
+                transform: scale(1.03);
+            }
+            #sa{
+                color: whitesmoke;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #ssa{
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .about{
+              height: 400px;
+              margin: 15px;
+              background-color: black;
+              padding: 20px;
+            }
+            #za{
+              box-shadow: 10px 10px 5px rgb(221, 218, 218);
+            }
+            #cd{
+              height: 400px;
+              margin: 80px;
+              background-color: teal;
+              box-shadow: 10px 10px 5px rgb(221, 218, 218);
+              padding: 30px;
+            }
+
+
+
+
+
+            .fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 60px; background-color: white; }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+
+      <nav class="fixed-nav-bar">  
+
+
+              <div class="a">
+                <img src="https://www.shutterstock.com/image-vector/illustration-icon-concept-food-donation-260nw-1115346623.jpg" alt="" id="a1">
+                <h id="a2" >
+                    <a href="#w" id="ss">Donate Food</a>
+                </h>
+                <div class="aa">
+                    <a href="#q" id="aa1">Home</a>
+                    <a href="#w" id="aa2">Donate</a>
+                    <a href="#eg" id="aa4">FoodDonars</a>
+                    <a href="#k" id="aa3">About Us</a>
+                </div>
+            </div>
+            
+          </nav><span id="q"></span> <br/><br/><br/><br/><br/>
+          
+
+
+
+        <div class="animated animatedFadeInUp fadeInUp" id="b">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="border-radius: 20px;">
+              <div class="carousel-item active">
+                <img src="https://www.eurodiaconia.org/wordpress/wp-content/uploads/2020/07/iStock-1224414210-scaled.jpg" class="d-block w-100" alt="..." height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/Q8B71EDsZTM/maxresdefault.jpg" class="d-block w-100" alt="..." height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.efsa.europa.eu/sites/default/files/styles/share_opengraph/public/news/food-donations.jpg?h=82f92a78&itok=3k3shqTm" class="d-block w-100" alt="..." height="600px" >
+              </div>
+              <div class="carousel-item">
+                <img src="https://w7.pngwing.com/pngs/917/923/png-transparent-graphy-food-donation-wine-donation-box-food-photography-donation.png" class="d-block w-100" alt="..." height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thecaringcenter.net/wp-content/uploads/2021/12/GettyImages-1296718715.jpg" class="d-block w-100" alt="..." height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.urbanoutreach.co.uk/wp-content/uploads/bfi_thumb/donate-food-os294jy4q511zq5odfhd0rxbqwj22fhtcg16z8uqyo.png" class="d-block w-100" alt="..." height="600px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <span id="w"></span>
+          </div><br/>
+
+
+
+
+          
+          <br/><br/>
+
+
+
+
+          <div class="container" id="ds">
+        <div class="row gy-3">
+        <div class="col-sm">
+            <div class="card h-100" style="border: 1px solid grey;">
+                <img src="https://iskconmumbai.com/images/logo-black.png" class="card-img-top" alt="..." id="as">
+                <div class="card-body">
+                  <h4 class="card-title">Iskcon</h4>
+                  <p class="card-text">ISKCON Juhu has a novel way of bringing the blessings of Lord Krishna in the form of food.</p>
+                  <a href="https://iskconmumbai.com/donate" class="btn btn-primary" target="_blank">Donate Here</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="card h-100" style="border: 1px solid grey;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnjZFv5LMcpbGW61faKDJR4_hesYfu5XPAQqbb7BG0cqSRC8rwpb3ehvEpWVLHh5aO7s&usqp=CAU" class="card-img-top" alt="..." style="height: 220px;" id="as">
+                <div class="card-body">
+                  <h5 class="card-title">UdayFoundation</h5>
+                  <p class="card-text">Donate Food for Poor Patients and their Families outside Hospitals. Little Uday, who was born with multiple birth defects inspire his parents to start Uday Foundation. </p>
+                  <a href="https://www.udayfoundation.org/donatefood/" class="btn btn-primary" target="_blank">Donate Here</a>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-sm">
+          <div class="card h-100" style="border: 1px solid grey;">
+              <img src="https://www.akshayapatra.org/apadmin/uploads/settings/tapf-logo-blue21dec.png" class="card-img-top" alt="..." height="170px" id="as">
+              <div class="card-body" >
+                <h5 class="card-title">Akshaya Patra</h5>
+                <p class="card-text">The Akshaya Patra Foundation is an NGO in India headquartered in Bengaluru. Our organisation strives to eliminate classroom hunger by implementing the Mid-Day Meal Scheme in the government schools and government-aided schools</p>
+                <a href="https://www.akshayapatra.org/" class="btn btn-primary" target="_blank">Donate Here</a>
+              </div>
+            </div>
+      </div>
+       
+        <div class="col-sm">
+            <div class="card h-100" style="border: 1px solid grey;">
+                <img src="https://happinessacts.org/wp-content/uploads/2021/05/cropped-logo.jpg" class="card-img-top" alt="..." id="as">
+                <div class="card-body">
+                  <h5 class="card-title">Happiness Acts Trust</h5>
+                  <p class="card-text">Donate and help poor and needy people today!
+                    Your contribution can go a long way in providing reliable source of happiness to the homeless people.
+                    Because happiness is not how much you give, but how much love you put into giving! 
+                    So, no matter how much you contribute, it will certainly make a big difference in someone’s life.</p>
+                  <a href="https://happinessacts.org/donate/?gclid=CjwKCAiA0cyfBhBREiwAAtStHHp13ZUGX8QqfKe6VzS1CrEAQQNHmpLzfAcjK3H8r0y36TZ0QgYKsRoCtHwQAvD_BwE" class="btn btn-primary" target="_blank">Donate Here</a>
+                  
+               
+                </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        <span id="eg"></span>
+          </div>
+<br/>
+<br/><br/><br/><br/>
+          <div class="container" id="ma">
+           
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner" style="border-radius: 20px;">
+                  <div class="carousel-item active">
+                    <img src="https://static.punjabkesari.in/multimedia/2019_7image_23_56_486868150sonu-sood.jpg" class="d-block w-100" alt="..." height="550px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/14FB6/production/_112424958_photo-2020-05-23-11-44-17.jpg" class="d-block w-100" alt="..." height="550px"  >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g26s6vo3d8jg7pe238qtjqq8e5-20210526234623.Medi.jpeg" class="d-block w-100" alt="..." height="550px" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.hindustantimes.com/img/2021/05/24/1600x900/fed95ab5-0e69-4400-bfbe-fc47cbb4dcdb_1621825279218_1621825303663.jpeg" class="d-block w-100" alt="..." height="550px" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://pbs.twimg.com/media/Ew6Wsd8VcAgyom4.jpg" class="d-block w-100" alt="..." height="550px" >
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+<br/><br/>
+            <div class="row gy-3">
+                <div class="col-sm" >
+                    <div class="card h-100" style="background-color: lavenderblush;">
+                        <img src="https://d30ny7ijak9wq4.cloudfront.net/s3fs-public/images/story/2015/11/04/sonu.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Super Star Sonu Sood</h2>
+                          <p class="card-text">Please click below to know about greatest Human being in the world <strong>Sonu Sood</strong></p>
+                          <a href="https://youtu.be/ZeZlLINqadQ" class="btn btn-primary" target="_blank">Click here</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card h-100" style="background-color: honeydew;">
+                        <img src="https://static.toiimg.com/photo/msid-77832086/77832086.jpg" class="card-img-top" alt="..." height="275px">
+                        <div class="card-body">
+                          <h2 class="card-title">Raghava Lawrence</h2>
+                          <p class="card-text"> Please click below to know about great Human being in the country <strong>Raghava Lawrence</strong></p>
+                          <a href="https://youtu.be/1cEsoXe6-lc" class="btn btn-primary" target="_blank">Click here</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card h-100" style="background-color: linen;">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202301/mahesh-babu-sixteen_nine.jpg?VersionId=PBYfskWm2rmHL4LsR.OpXi4HFC9qatDH&size=690:388" class="card-img-top" alt="..." height="275px">
+                        <div class="card-body">
+                          <h2 class="card-title">Prince Mahesh babu</h2>
+                          <p class="card-text">Please click below to know about great Human being in the country <strong>Mahesh babu</strong></p>
+                          <a href="https://youtu.be/2ozXRSTNfbI" class="btn btn-primary" target="_blank">Click here</a>
+                        </div>
+                      </div>
+                </div>
+            </div><br/>
+
+            <div id="za" class="about">
+              <h4 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic;">
+                "This website shows a few Celebrities in India who are helping people a lot and other than this so many 
+                Celebrities and various people in India are donating food, clothes, books and many more things to needy people. So please help people as much as we can in our day-to-day life."
+              </h4>
+              <img src="https://www.oneindia.com/ph-big/2020/05/a-boy-wearing-face-mask-receives-food-from-volunteers-during-ongoing-covid-19-lockdown-in-kolkata_158839189180.jpg" alt="" style="float: right; height: 250px; width: 250px;border-radius: 10px; background-color: whitesmoke;padding: 2px;">
+              <ul style="color: whitesmoke; list-style-type: none;padding: 35px; font-style: italic; font-size: 20px;">
+                <li>★ &nbsp Share food, save lives.</li>
+                <li>★ &nbsp Stop hunger, start sharing!</li>
+                <li>★ &nbsp Don’t be rude, donate some food.</li>
+                <li>★ &nbsp Feed the hungry souls.</li>
+                <li>★ &nbsp Food for everyone.</li>
+                <li>★ &nbsp Donate and Help.</li>
+              </ul><span id="k"></span>
+          </div>
+        </div>
+        <br/>
+
+        <div id="cd" class="about">
+          <h1 id="sa">About me</h1><br/>
+          <h3 style="color: white;padding: 17px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            I’m Akkisetty Nagarjuna founder of the “Donate Food” website, and the website speaks about how people are donating food, books, clothes, money….. etc to needy people in India. 
+            Through this website end users can also donate food to people in India.
+             Finally, I can proudly say that when an end user comes to my website he can be motivated and also donates food to people.
+          </h3>
+        </div>
+
+  <footer class="text-center text-lg-start text-white" style="background-color: darkgray;">
+    <section class="d-flex justify-content-between p-4" style="background-color: cadetblue;">
+      <div class="me-5">
+        <span>Connections:</span>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" class="text-white me-4" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" class="text-white me-4" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" class="text-white me-4" target="_blank">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" class="text-white me-4" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" class="text-white me-4" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/akkisettynagarjuna" class="text-white me-4" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h1 >Donate Food</h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300402.png" alt="" height="150px" width="150px" >
+          </div>
+          
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h3 class="text-uppercase fw-bold" >Contact</h3>
+            <p><i class="fas fa-home mr-3"></i> Proddatur, kadapa district, A.P</p>
+            <p><i class="fas fa-envelope mr-3"></i> akkisettynagarjuna99@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>8074702623</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="https://www.linkedin.com/in/akkisetty-nagarjuna-a9911b198" target="_blank">Akkisetty Nagarjuna</a>
+    </div>
+  </footer>
+    </body>
+</html>
